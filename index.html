@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Health Timeline Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- SoftwareApplication Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://healthiwellness.com/7-critical-ways-how-sleep-impacts-long-term-health-proven-by-science/#sleep-calculator",
+        "name": "Sleep Health Timeline Calculator",
+        "applicationCategory": "HealthApplication",
+        "operatingSystem": "Any",
+        "description": "Interactive tool to calculate sleep health score and visualize long-term health impacts of sleep patterns",
+        "url": "https://healthiwellness.com/7-critical-ways-how-sleep-impacts-long-term-health-proven-by-science/",
+        "author": {
+            "@type": "Person",
+            "@id": "https://healthiwellness.com/ibinu-vadakkan/",
+            "name": "Ibinu Vadakkan",
+            "url": "https://healthiwellness.com/ibinu-vadakkan/",
+            "sameAs": [
+                "https://www.facebook.com/ibinu.vadakkan/",
+                "https://twitter.com/ibinu_vadakkan",
+                "https://medium.com/@ibinuvadakkan888",
+                "https://substack.com/@dailysmartdigest",
+                "https://www.instagram.com/hereiamibinuvadakkan/",
+                "https://creators.spotify.com/pod/profile/ibinuvadakkan/",
+                "http://www.linkedin.com/in/ibinu-vadakkan-the888",
+                "https://www.threads.com/@hereiamibinuvadakkan",
+                "https://www.quora.com/profile/Ibinu-Vadakkan",
+                "https://www.reddit.com/user/ibinuvadakkan",
+                "https://github.com/ibinuvadakkan",
+                "http://www.pinterest.com/ibinuvadakkan888"
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://healthiwellness.com/#organization",
+            "name": "Health and Wellness",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://healthiwellness.com/#logo",
+                "url": "https://healthiwellness.com/wp-content/uploads/2025/10/cropped-health-and-wellness-logo.webp",
+                "contentUrl": "https://healthiwellness.com/wp-content/uploads/2025/10/cropped-health-and-wellness-logo.webp",
+                "caption": "Health and Wellness",
+                "inLanguage": "en-US",
+                "width": 512,
+                "height": 512
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": "Sleep duration calculator, Sleep quality assessment, Health impact timeline, Personalized recommendations",
+        "softwareVersion": "1.0",
+        "datePublished": "2025-10-28T22:31:30+05:30",
+        "dateModified": "2025-10-28T22:31:33+05:30"
+    }
+    </script>
+</head>
+<body>
+    <div class="sleep-timeline-tool">
+        <h2>How Sleep Impacts Your Long-Term Health</h2>
+        <p class="subtitle">Discover the proven connection between your sleep today and your health 10 years from now</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Years 1-3 of Poor Sleep</h3>
+                    <div class="health-effects">
+                        <div class="effect">
+                            <span class="effect-icon">🩸</span>
+                            <span>Blood sugar regulation issues begin</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">⚖️</span>
+                            <span>Weight gain accelerates</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">🛡️</span>
+                            <span>Immune function weakens</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year">1-3 Years</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Years 4-6 of Poor Sleep</h3>
+                    <div class="health-effects">
+                        <div class="effect">
+                            <span class="effect-icon">❤️</span>
+                            <span>Cardiovascular changes become measurable</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">📊</span>
+                            <span>Blood pressure elevation develops</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">🔥</span>
+                            <span>Inflammation markers rise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year">4-6 Years</div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Years 7-10 of Poor Sleep</h3>
+                    <div class="health-effects">
+                        <div class="effect">
+                            <span class="effect-icon">⚠️</span>
+                            <span>Significant mortality risk increases</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">🧠</span>
+                            <span>Cognitive decline becomes apparent</span>
+                        </div>
+                        <div class="effect">
+                            <span class="effect-icon">📈</span>
+                            <span>Chronic disease risk doubles</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-year">7-10 Years</div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h3>Calculate Your Sleep Health Score</h3>
+            <p>Find out how your current sleep habits might be affecting your long-term health and get personalized recommendations.</p>
+            
+            <div class="form-group">
+                <label for="sleep-hours">How many hours do you typically sleep per night?</label>
+                <input type="number" id="sleep-hours" min="3" max="12" step="0.5" value="7">
+            </div>
+            
+            <div class="form-group">
+                <label for="sleep-quality">How would you rate your sleep quality?</label>
+                <select id="sleep-quality">
+                    <option value="5">Excellent - Deep, uninterrupted sleep</option>
+                    <option value="4">Good - Mostly restful with minor interruptions</option>
+                    <option value="3" selected>Fair - Several interruptions or light sleep</option>
+                    <option value="2">Poor - Frequent waking or very light sleep</option>
+                    <option value="1">Very Poor - Hardly any deep sleep, constant waking</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="sleep-consistency">How consistent is your sleep schedule?</label>
+                <select id="sleep-consistency">
+                    <option value="5">Very Consistent - Same bedtime/waketime (±30 min)</option>
+                    <option value="4">Mostly Consistent - Small variations (±1 hour)</option>
+                    <option value="3" selected>Somewhat Consistent - Varies by 1-2 hours</option>
+                    <option value="2">Inconsistent - Varies by 2-3 hours</option>
+                    <option value="1">Very Inconsistent - No regular schedule</option>
+                </select>
+            </div>
+            
+            <button type="button" class="btn" id="calculate-btn">Calculate My Sleep Health Score</button>
+            <p class="disclaimer">Your information is secure and never shared with third parties.</p>
+            
+            <div class="results" id="results-section">
+                <h3>Your Sleep Health Report</h3>
+                <div class="sleep-score" id="score-display">82</div>
+                <div class="score-label" id="score-label">Good - Room for improvement</div>
+                
+                <div class="recommendations">
+                    <div class="recommendation">
+                        <span class="rec-icon">💡</span>
+                        <div>
+                            <strong>Establish a consistent sleep schedule:</strong> Try to go to bed and wake up at the same time every day, even on weekends.
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <span class="rec-icon">💡</span>
+                        <div>
+                            <strong>Create a relaxing bedtime routine:</strong> Spend the last 30-60 minutes before bed doing calming activities like reading.
+                        </div>
+                    </div>
+                    <div class="recommendation">
+                        <span class="rec-icon">💡</span>
+                        <div>
+                            <strong>Limit screen time before bed:</strong> The blue light from devices can disrupt your natural sleep-wake cycle.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
