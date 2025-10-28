@@ -1,0 +1,310 @@
+/* Sleep Health Timeline Tool Styles */
+.sleep-timeline-tool {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --light-color: #f5f7fa;
+    --dark-color: #34495e;
+    --text-color: #2c3e50;
+    --text-light: #7f8c8d;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+
+.sleep-timeline-tool h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.sleep-timeline-tool .subtitle {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 30px;
+    font-size: 16px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sleep-timeline-tool .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.sleep-timeline-tool .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.sleep-timeline-tool .timeline-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+}
+
+.sleep-timeline-tool .timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.sleep-timeline-tool .timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.sleep-timeline-tool .timeline-content {
+    width: 45%;
+    padding: 20px;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sleep-timeline-tool .timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.sleep-timeline-tool .timeline-year {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sleep-timeline-tool .timeline-item:nth-child(odd) .timeline-year {
+    right: 27%;
+    background: var(--accent-color);
+}
+
+.sleep-timeline-tool .timeline-item:nth-child(even) .timeline-year {
+    left: 27%;
+    background: #f39c12;
+}
+
+.sleep-timeline-tool .timeline-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.sleep-timeline-tool .health-effects {
+    margin-top: 15px;
+}
+
+.sleep-timeline-tool .effect {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.sleep-timeline-tool .effect-icon {
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.sleep-timeline-tool .cta-section {
+    background: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.sleep-timeline-tool .cta-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.sleep-timeline-tool .cta-section p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sleep-timeline-tool .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sleep-timeline-tool .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.sleep-timeline-tool .form-group input,
+.sleep-timeline-tool .form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.sleep-timeline-tool .form-group input:focus,
+.sleep-timeline-tool .form-group select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.sleep-timeline-tool .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.sleep-timeline-tool .btn:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+.sleep-timeline-tool .disclaimer {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 15px;
+}
+
+.sleep-timeline-tool .results {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e8f4fc;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+    display: none;
+}
+
+.sleep-timeline-tool .sleep-score {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sleep-timeline-tool .score-label {
+    text-align: center;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.sleep-timeline-tool .recommendations {
+    margin-top: 20px;
+}
+
+.sleep-timeline-tool .recommendation {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.sleep-timeline-tool .rec-icon {
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sleep-timeline-tool .timeline::before {
+        left: 30px;
+    }
+    
+    .sleep-timeline-tool .timeline-item {
+        flex-direction: row !important;
+        justify-content: flex-start;
+    }
+    
+    .sleep-timeline-tool .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+    }
+    
+    .sleep-timeline-tool .timeline-year {
+        left: 0 !important;
+        right: auto !important;
+        width: 60px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sleep-timeline-tool {
+        padding: 15px;
+    }
+    
+    .sleep-timeline-tool h2 {
+        font-size: 24px;
+    }
+    
+    .sleep-timeline-tool .timeline-content {
+        padding: 15px;
+    }
+    
+    .sleep-timeline-tool .cta-section {
+        padding: 20px;
+    }
+    
+    .sleep-timeline-tool .sleep-score {
+        font-size: 36px;
+    }
+}
